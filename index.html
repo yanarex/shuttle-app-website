@@ -8,9 +8,9 @@
   <style>
     :root{
       --bg: #ffffff;
-      --fg: #1f2328; /* GitHub-like dark gray */
+      --fg: #1f2328;
       --muted: #57606a;
-      --brand: #0969da; /* GitHub link blue */
+      --brand: #0969da;
       --border: #d0d7de;
       --card: #f6f8fa;
       --radius: 12px;
@@ -19,7 +19,7 @@
     * { box-sizing: border-box; }
     body{ margin:0; font: 16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji"; color:var(--fg); background:var(--bg); }
     .page{ max-width: var(--maxw); margin: 0 auto; padding: 2rem 1rem 4rem; }
-    header{ display:flex; align-items:center; gap:1rem; padding:1rem; background:var(--card); border-bottom:1px solid var(--border); }
+    header{ display:flex; align-items:center; gap:1rem; padding:1rem; border-bottom:1px; }
     header .title{ font-size: clamp(1.6rem, 2.5vw, 2rem); margin:0; font-weight:700; }
     header .subtitle{ color:var(--muted); margin:0; }
 
@@ -53,18 +53,18 @@
       <h2 id="project-name">Project Name</h2>
       <p><strong>Panther Shuttle App</strong></p>
       <p><strong>Team Members and Email Addresses</strong><br>
-        <!-- Replace with actual names/emails -->
-        Student One – <a href="mailto:sone@my.fit.edu">sone@my.fit.edu</a><br>
-        Student Two – <a href="mailto:stwo@my.fit.edu">stwo@my.fit.edu</a><br>
-        Student Three – <a href="mailto:sthree@my.fit.edu">sthree@my.fit.edu</a><br>
-        <span class="muted">Faculty Advisor</span> – Prof. Advisor Name
+        Tony Arrington – <a href="tarrington2022@my.fit.edu">tarrington2022@my.fit.edu</a><br>
+        Joey Hilte – <a href="mailto:jhilte2022@my.fit.edu">jhilte2022@my.fit.edu</a><br>
+        Jonathan Suo – <a href="mailto:jsuo2022@my.fit.edu">
+jsuo2022@my.fit.edu</a><br>
+        Chase Monigle - <a href="cmonigle2022@my.fit.edu">cmonigle2022@my.fit.edu</a><br>
+        <span class="muted">Faculty Advisor</span> – Prof. Ham
       </p>
     </section>
 
     <section>
       <h2 id="first-semester">First Semester</h2>
-      <p class="note">Per your request, the first table is present but <em>intentionally left blank</em>.</p>
-      <table aria-label="First Semester Milestones (blank)">
+      <table aria-label="First Semester Milestones">
         <thead>
           <tr>
             <th style="width: 30%">Item</th>
@@ -73,7 +73,50 @@
           </tr>
         </thead>
         <tbody>
-          <!-- Intentionally blank -->
+         <tr>
+            <td><strong>Plan</strong></td>
+            <td>
+              <a href="#">Plan</a>
+              &nbsp;•&nbsp;
+              <a href="_">Presentation</a>
+            </td>
+            <td>Jan 27</td>
+          </tr>
+          <tr>
+            <td><strong>Milestone 1</strong></td>
+            <td>
+              <a href="#">Presentation</a>
+              &nbsp;•&nbsp;
+              <a href="#">Progress Evaluation</a>
+            </td>
+            <td>Feb 24</td>
+          </tr>
+          <tr>
+            <td><strong>Milestone 2</strong></td>
+            <td>
+              <a href="#">Poster</a>
+              &nbsp;•&nbsp;
+              <a href="#">e‑book page</a>
+              &nbsp;•&nbsp;
+              <a href="#">Presentation</a>
+              &nbsp;•&nbsp;
+              <a href="#">Progress Evaluation</a>
+            </td>
+            <td>Mar 26</td>
+          </tr>
+          <tr>
+            <td><strong>Milestone 3</strong></td>
+            <td>
+              <a href="#">User/Developer Manual</a>
+              &nbsp;•&nbsp;
+              <a href="#">Demo Video</a>
+              &nbsp;•&nbsp;
+              <a href="#">Presentation</a>
+              &nbsp;•&nbsp;
+              <a href="#">Progress Evaluation</a>
+            </td>
+            <td>Apr 21</td>
+          </tr>
         </tbody>
       </table>
     </section>
@@ -135,16 +178,6 @@
           </tr>
         </tbody>
       </table>
-    </section>
-
-    <section class="card">
-      <h2 id="repo-notes">How to publish as a GitHub Pages project site</h2>
-      <ol>
-        <li>Place this <code>index.html</code> at the root of your repository (e.g., <code>shuttle-app/</code>).</li>
-        <li>In GitHub → <strong>Settings → Pages</strong> → Source: <em>Deploy from a branch</em>, Branch: <code>main</code>, Folder: <code>/ (root)</code>.</li>
-        <li>Your URL will be <code>https://YOURUSERNAME.github.io/shuttle-app/</code>.</li>
-      </ol>
-      <p class="note">Remember: use relative paths like <code>styles/main.css</code> (not <code>/styles/main.css</code>) so assets work under <code>/shuttle-app/</code>.</p>
     </section>
 
     <footer>
