@@ -2,21 +2,159 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title> Hey guys i just made a website and joey is gay</title></title>
-  <meta name="description" content="Just HTML & CSS on GitHub Pages." />
-  <link rel="stylesheet" href="styles/main.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Panther Shuttle App</title>
+  <meta name="description" content="Project site for the Panther Shuttle App." />
+  <style>
+    :root{
+      --bg: #ffffff;
+      --fg: #1f2328; /* GitHub-like dark gray */
+      --muted: #57606a;
+      --brand: #0969da; /* GitHub link blue */
+      --border: #d0d7de;
+      --card: #f6f8fa;
+      --radius: 12px;
+      --maxw: 900px;
+    }
+    * { box-sizing: border-box; }
+    body{ margin:0; font: 16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji"; color:var(--fg); background:var(--bg); }
+    .page{ max-width: var(--maxw); margin: 0 auto; padding: 2rem 1rem 4rem; }
+    header{ display:flex; align-items:center; gap:1rem; padding:1rem; background:var(--card); border-bottom:1px solid var(--border); }
+    header .title{ font-size: clamp(1.6rem, 2.5vw, 2rem); margin:0; font-weight:700; }
+    header .subtitle{ color:var(--muted); margin:0; }
+
+    h2{ margin-top: 2.2rem; border-bottom:1px solid var(--border); padding-bottom:.4rem; }
+    a{ color:var(--brand); text-decoration:none; }
+    a:hover{ text-decoration:underline; }
+
+    .card{ background:var(--card); border:1px solid var(--border); border-radius: var(--radius); padding:1rem; }
+    .grid{ display:grid; gap:1rem; }
+    @media (min-width: 800px){ .grid{ grid-template-columns: 1fr 1fr; } }
+
+    table{ width:100%; border-collapse: collapse; background:#fff; border:1px solid var(--border); border-radius: var(--radius); overflow:hidden; }
+    thead th{ background:var(--card); text-align:left; font-weight:600; padding:.75rem 1rem; border-bottom:1px solid var(--border); }
+    tbody td{ padding:.75rem 1rem; border-top:1px solid var(--border); vertical-align: top; }
+    tbody tr:hover{ background:#fefefe; }
+    .note{ color:var(--muted); font-size:.95rem; }
+    footer{ margin-top:3rem; color:var(--muted); text-align:center; }
+    .muted{ color: var(--muted); }
+  </style>
 </head>
 <body>
   <header>
-    <nav><a href="./">Home</a> · <a href="./about.html">About</a></nav>
+    <div class="page" style="padding:0;">
+      <h1 class="title">Panther Shuttle App</h1>
+      <p class="subtitle">Senior Design / Project Site (GitHub Pages)</p>
+    </div>
   </header>
-  <main>
-    <h1>Hello, Pages 👋</h1>
-    <p>If you can see this, your moms gay</p>
+
+  <main class="page">
+    <section class="card">
+      <h2 id="project-name">Project Name</h2>
+      <p><strong>Panther Shuttle App</strong></p>
+      <p><strong>Team Members and Email Addresses</strong><br>
+        <!-- Replace with actual names/emails -->
+        Student One – <a href="mailto:sone@my.fit.edu">sone@my.fit.edu</a><br>
+        Student Two – <a href="mailto:stwo@my.fit.edu">stwo@my.fit.edu</a><br>
+        Student Three – <a href="mailto:sthree@my.fit.edu">sthree@my.fit.edu</a><br>
+        <span class="muted">Faculty Advisor</span> – Prof. Advisor Name
+      </p>
+    </section>
+
+    <section>
+      <h2 id="first-semester">First Semester</h2>
+      <p class="note">Per your request, the first table is present but <em>intentionally left blank</em>.</p>
+      <table aria-label="First Semester Milestones (blank)">
+        <thead>
+          <tr>
+            <th style="width: 30%">Item</th>
+            <th>Links</th>
+            <th style="width: 20%">Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Intentionally blank -->
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2 id="second-semester">Second Semester</h2>
+      <table aria-label="Second Semester Milestones">
+        <thead>
+          <tr>
+            <th style="width: 30%">Item</th>
+            <th>Links</th>
+            <th style="width: 20%">Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Plan</strong></td>
+            <td>
+              <a href="#">Plan</a>
+              &nbsp;•&nbsp;
+              <a href="#">Presentation</a>
+            </td>
+            <td>Jan 27</td>
+          </tr>
+          <tr>
+            <td><strong>Milestone 4</strong></td>
+            <td>
+              <a href="#">Presentation</a>
+              &nbsp;•&nbsp;
+              <a href="#">Progress Evaluation</a>
+            </td>
+            <td>Feb 24</td>
+          </tr>
+          <tr>
+            <td><strong>Milestone 5</strong></td>
+            <td>
+              <a href="#">Poster</a>
+              &nbsp;•&nbsp;
+              <a href="#">e‑book page</a>
+              &nbsp;•&nbsp;
+              <a href="#">Presentation</a>
+              &nbsp;•&nbsp;
+              <a href="#">Progress Evaluation</a>
+            </td>
+            <td>Mar 26</td>
+          </tr>
+          <tr>
+            <td><strong>Milestone 6</strong></td>
+            <td>
+              <a href="#">User/Developer Manual</a>
+              &nbsp;•&nbsp;
+              <a href="#">Demo Video</a>
+              &nbsp;•&nbsp;
+              <a href="#">Presentation</a>
+              &nbsp;•&nbsp;
+              <a href="#">Progress Evaluation</a>
+            </td>
+            <td>Apr 21</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2 id="repo-notes">How to publish as a GitHub Pages project site</h2>
+      <ol>
+        <li>Place this <code>index.html</code> at the root of your repository (e.g., <code>shuttle-app/</code>).</li>
+        <li>In GitHub → <strong>Settings → Pages</strong> → Source: <em>Deploy from a branch</em>, Branch: <code>main</code>, Folder: <code>/ (root)</code>.</li>
+        <li>Your URL will be <code>https://YOURUSERNAME.github.io/shuttle-app/</code>.</li>
+      </ol>
+      <p class="note">Remember: use relative paths like <code>styles/main.css</code> (not <code>/styles/main.css</code>) so assets work under <code>/shuttle-app/</code>.</p>
+    </section>
+
+    <footer>
+      <small>© <span id="y"></span> Panther Shuttle App</small>
+    </footer>
   </main>
-  <footer><small>© <span id="y"></span> You</small></footer>
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+
+  <script>
+    // Set current year in footer
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
-
