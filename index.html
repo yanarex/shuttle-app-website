@@ -6,34 +6,133 @@
   <title>Panther Shuttle App</title>
   <meta name="description" content="Project site for the Panther Shuttle App." />
   <style>
-    :root{
+    :root {
       --border: #d0d7de;
       --radius: 12px;
     }
-    * { box-sizing: border-box; }
-    body{ margin:0; font: 16px/1.6; color: #1f2328; background: #ffffff; }
-    .page{ max-width: 900px; margin: 0 auto; padding: 2rem 1rem 3rem; }
-    header{ display:flex; align-items:center; gap:1rem; padding:1rem; border-bottom:1px; }
-    header .title{ font-size: clamp(1.6rem, 2.5vw, 2rem); margin:0; font-weight:700; }
-    header .subtitle{ color: #57606a; margin:0; }
 
-    p { line-height: 1.6;}
-    h2{ margin-top: 2.2rem; border-bottom:1px solid var(--border); padding-bottom:.4rem; }
-    a{ color: #0969da; }
-    a:hover{ text-decoration:underline; }
+    * {
+      box-sizing: border-box;
+    }
+  
+    body {
+      margin: 0;
+      font: 16px/1.6;
+      color: #1f2328;
+      background: #ffffff;
+    }
+  
+    .page {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1rem 3rem;
+    }
+  
+    header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem;
+      border-bottom: 1px;
+    }
+  
+    header .title {
+      font-size: clamp(1.6rem, 2.5vw, 2rem);
+      margin: 0;
+      font-weight: 700;
+    }
+  
+    header .subtitle {
+      color: #57606a;
+      margin: 0;
+    }
+  
+    p {
+      line-height: 1.6;
+    }
+  
+    h2 {
+      margin-top: 2.2rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: .4rem;
+    }
+  
+    a {
+      color: #0969da;
+    }
+  
+    a:hover {
+      text-decoration: underline;
+    }
+  
+    #project-name {
+      margin-top: -0.5rem;
+    }
+  
+    .card {
+      background: #f6f8fa;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1rem;
+    }
+  
+    .grid {
+      display: grid;
+      gap: 1rem;
+    }
+  
+    @media (min-width: 800px) {
+      .grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+    }
+  
+    thead th {
+      background: #f6f8fa;
+      text-align: left;
+      font-weight: 600;
+      padding: .75rem 1rem;
+      border-bottom: 1px solid var(--border);
+    }
+  
+    tbody td {
+      padding: .75rem 1rem;
+      border-top: 1px solid var(--border);
+      vertical-align: top;
+    }
+  
+    tbody tr:hover {
+      background: #fefefe;
+    }
 
-    #project-name {margin-top: -0.5rem;}
-    .card{ background: #f6f8fa; border:1px solid var(--border); border-radius: var(--radius); padding:1rem; }
-    .grid{ display:grid; gap:1rem; }
-    @media (min-width: 800px){ .grid{ grid-template-columns: 1fr 1fr; } }
+    .links a {
+      text-decoration: none;
+    }
 
-    table{ width:100%; border-collapse: collapse; background:#fff; border:1px solid var(--border); border-radius: var(--radius);}
-    thead th{ background: #f6f8fa; text-align:left; font-weight:600; padding:.75rem 1rem; border-bottom:1px solid var(--border); }
-    tbody td{ padding:.75rem 1rem; border-top:1px solid var(--border); vertical-align: top; }
-    tbody tr:hover{ background:#fefefe; }
-    .note{ color: #57606a ; font-size:.95rem; }
-    footer{ margin-top:3rem; color: #57606a; text-align:center; }
-    .muted{ color: #57606a; }
+    .links a + a::before {
+      content: " •";
+      margin: 0 0.3em;
+      color: #555;
+    }
+
+    .note {
+      color: #57606a;
+      font-size: .95rem;
+    }
+  
+    footer {
+      margin-top: 3rem;
+      color: #57606a;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
@@ -46,13 +145,13 @@
   <main class="page">
     <section class="card">
       <h2 id="project-name"><strong>Team Members</strong></h2>
-      <p><br>
-        Tony Arrington – <a href="tarrington2022@my.fit.edu">tarrington2022@my.fit.edu</a><br>
+      <p style="margin-top: -2rem; margin-bottom: -0.5rem;"><br>
+        Tony Arrington – <a href="mailto:tarrington2022@my.fit.edu">tarrington2022@my.fit.edu</a><br>
         Joey Hilte – <a href="mailto:jhilte2022@my.fit.edu">jhilte2022@my.fit.edu</a><br>
         Jonathan Suo – <a href="mailto:jsuo2022@my.fit.edu">
 jsuo2022@my.fit.edu</a><br>
-        Chase Monigle - <a href="cmonigle2022@my.fit.edu">cmonigle2022@my.fit.edu</a><br>
-        <span class="muted">Faculty Advisor</span> – Prof. Ham
+        Chase Monigle - <a href="mailto:cmonigle2022@my.fit.edu">cmonigle2022@my.fit.edu</a><br>
+        <span>Faculty Advisor</span> – Prof. Ham
       </p>
     </section>
 
@@ -69,15 +168,15 @@ jsuo2022@my.fit.edu</a><br>
         <tbody>
          <tr>
             <td><strong>Plan</strong></td>
-            <td>
+            <td class="links">
               <a href="#">idk bro</a>
-              <a href="_">we aint do ts yet</a>
+              <a href="#">we aint do ts yet</a>
             </td>
             <td>TBD</td>
           </tr>
           <tr>
             <td><strong>Milestone 1</strong></td>
-            <td>
+            <td class="links">
               <a href="#">cooked</a>
               <a href="#">ewww wth</a>
             </td>
@@ -85,7 +184,7 @@ jsuo2022@my.fit.edu</a><br>
           </tr>
           <tr>
             <td><strong>Milestone 2</strong></td>
-            <td>
+            <td class="links">
               <a href="#">lets goo</a>
               <a href="#">da baby?</a>
               <a href="#">joey = gay</a>
@@ -95,7 +194,7 @@ jsuo2022@my.fit.edu</a><br>
           </tr>
           <tr>
             <td><strong>Milestone 3</strong></td>
-            <td>
+            <td class="links">
               <a href="#">we will cook</a>
               <a href="#">i hope</a>
               <a href="#">please</a>
@@ -120,44 +219,36 @@ jsuo2022@my.fit.edu</a><br>
         <tbody>
           <tr>
             <td><strong>Plan</strong></td>
-            <td>
+            <td class="links">
               <a href="#">a</a>
-              &nbsp;•&nbsp;
               <a href="#">b</a>
             </td>
             <td>TBD</td>
           </tr>
           <tr>
             <td><strong>Milestone 4</strong></td>
-            <td>
+            <td class="links">
               <a href="#">c</a>
-              &nbsp;•&nbsp;
               <a href="#">d</a>
             </td>
             <td>TBD</td>
           </tr>
           <tr>
             <td><strong>Milestone 5</strong></td>
-            <td>
+            <td class="links">
               <a href="#">e</a>
-              &nbsp;•&nbsp;
               <a href="#">f</a>
-              &nbsp;•&nbsp;
               <a href="#">g</a>
-              &nbsp;•&nbsp;
               <a href="#">h</a>
             </td>
             <td>TBD</td>
           </tr>
           <tr>
             <td><strong>Milestone 6</strong></td>
-            <td>
+            <td class="links">
               <a href="#">i</a>
-              &nbsp;•&nbsp;
               <a href="#">j</a>
-              &nbsp;•&nbsp;
               <a href="#">k</a>
-              &nbsp;•&nbsp;
               <a href="#">wait a min</a>
             </td>
             <td>TBD</td>
@@ -167,12 +258,13 @@ jsuo2022@my.fit.edu</a><br>
     </section>
 
     <footer>
-      <small>© <span id="y"></span> Panther Shuttle App</small>
+      <small>© <span id="foot"></span> Panther Shuttle App</small>
     </footer>
   </main>
 
   <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
+    document.getElementById('foot').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
+
