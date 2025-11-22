@@ -8,4 +8,6 @@ This project is deployed using **GitHub Pages** as a static site.
 ---
 
 ## 🚍 Features
-Nothing
+- Basic Notification Service
+- Full shuttle schedule
+- Map still in development
