@@ -11,3 +11,8 @@ This project is deployed using **GitHub Pages** as a static site.
 - Basic Notification Service
 - Full shuttle schedule
 - Map still in development
+
+---
+
+## Website
+- <https://yanarex.github.io/shuttle-app-website/>
